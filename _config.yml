@@ -2,7 +2,9 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  # 微言: /t/
+  相册: /photos/
+  相册2: /instagram/
 
 # SubNav
 subnav:
@@ -11,10 +13,10 @@ subnav:
   rss: "http://www.whatled.com/rss.php"
   zhihu: "https://www.zhihu.com/people/sxyseo"
   #qq: "#"
-  #weixin: "#"
+  #weixin: "jiang_shaobo"
   #jianshu: "#"
   #douban: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:admin@sxyseo.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -44,19 +46,19 @@ open_in_new: false
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '谢谢你请我吃糖'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /assets/img/alipay.png
 # 微信二维码图片地址
-weixin: 
+weixin: /assets/img/wechat.png
 
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /assets/img/favicon.ico
 
 #你的头像url
-avatar:
+avatar: /assets/img/logo.jpg
 
 #是否开启分享
 share_jia: true
@@ -75,7 +77,7 @@ style:
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
@@ -88,11 +90,7 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  友情链接1: https://github.com/sxyseo/
-  友情链接2: https://github.com/sxyseo/
-  友情链接3: https://github.com/sxyseo/
-  友情链接4: https://github.com/sxyseo/
-  友情链接5: https://github.com/sxyseo/
-  友情链接6: https://github.com/sxyseo/
+  少将博客: http://www.whatled.com/
+  Abel blog: http://jiangshaobo.cn/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: Abel,<br><br>毕业于湖南理工<br><br>致力于成为一个<br>高效工作，<br>会生活，<br>并有趣的人。
