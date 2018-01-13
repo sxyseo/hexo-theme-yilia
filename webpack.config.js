@@ -10,14 +10,14 @@ var CleanPlugin = require('clean-webpack-plugin');
 var minifyHTML = {
   collapseInlineTagWhitespace: true,
   collapseWhitespace: true,
-  minifyJS: true
+  minifyJS:true
 }
 
 module.exports = {
   entry: {
     main: "./source-src/js/main.js",
     slider: "./source-src/js/slider.js",
-    mobile: "./source-src/js/mobile.js"
+    mobile: ["babel-polyfill", "./source-src/js/mobile.js"]
   },
   output: {
     path: "./source",
@@ -27,7 +27,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
+      loader: 'babel-loader?cacheDirectory',
       exclude: /node_modules/
     }, {
       test: /\.html$/,
@@ -52,7 +52,7 @@ module.exports = {
     }
   },
   // devtool: '#eval-source-map',
-  postcss: function () {
+  postcss: function() {
     return [autoprefixer];
   },
   plugins: [
